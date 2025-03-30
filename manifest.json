@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "NBN Connection Type Viewer",
+  "version": "1.0",
+  "description": "Shows NBN connection info for property listings on Domain and Realestate websites.",
+  "permissions": [
+    "https://places.nbnco.net.au/",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.domain.com.au/*",
+        "https://www.realestate.com.au/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
