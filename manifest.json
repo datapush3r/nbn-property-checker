@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "NBN Connection Type Viewer",
+  "name": "NBN Property Checker",
   "version": "1.0",
   "description": "Shows NBN connection info for property listings on Domain and Realestate websites.",
   "permissions": [
